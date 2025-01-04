@@ -1,0 +1,77 @@
+/* Styling for other sections */
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 5%;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 70px 5%;
+}
+
+.firstSection>div {
+    flex: 1 1 300px;
+    /* Allow flexibility while setting a minimum width */
+    padding: 10px;
+    /* Added padding for spacing */
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.rightSection img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.purple {
+    color: rgb(126, 19, 226);
+}
+
+#element {
+    color: rgb(153, 153, 226);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstSection>div {
+        width: 90%;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .leftSection .btn {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+}

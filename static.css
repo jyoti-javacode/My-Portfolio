@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.6rem;
+    background-color: rgb(15, 15, 77);
+    padding: 0 20px;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color .4s;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.02rem;
+}
+
+.nav__toggle, .nav__close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(240, 70%, 10%, .9);
+        backdrop-filter: blur(16px);
+        width: 60%;
+        height: 100%;
+        padding: 7rem 3rem;
+        transition: right 0.4s ease-in-out;
+        z-index: 10;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 35px;
+    }
+}
+
+/* Tablet and PC Responsiveness */
+@media screen and (min-width: 769px) {
+    nav {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+        position: static;
+        height: auto;
+        width: auto;
+        padding: 0;
+        backdrop-filter: none;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .nav__toggle, .nav__close {
+        display: none;
+    }
+}
+
+/* Styling for other sections */
+header img {
+    height: 40px;
+}
+.grid {
+    display: grid;
+}
+
+.footer {
+    background-color: rgb(71, 71, 93);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer h3,
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}

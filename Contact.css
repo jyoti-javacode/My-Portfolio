@@ -1,0 +1,82 @@
+.section__title {
+    font-size: 24px;
+    font-weight: bold;
+    row-gap: 3rem;
+    margin: 3rem;
+    text-align: center;
+}
+.container{
+    margin: 0 1rem;
+}
+
+.contact__container {
+    row-gap: 4rem;
+}
+
+.contact__group,
+.contact__form {
+    gap: 1rem;
+}
+
+.contact__form {
+    position: relative;
+}
+.contact__area{
+    resize: none;
+    height: 9rem;
+}
+
+.contact__input {
+    padding: 1.25rem;
+    background-color: rgb(15, 15, 77);
+    color: white;
+    font-weight: bold;
+}
+
+.contact__input::placeholder {
+    color: rgb(239, 231, 231);
+}
+
+.contact__button {
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.contact__social {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.contact__social-link {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    column-gap: .25rem;
+    align-items: center;
+    transition: color .4s;
+}
+
+.contact__social-link img {
+    font-size: 1.5rem;
+}
+
+.contact__social-link span {
+    font-size: small;
+    font-weight: bold;
+}
+
+.contact__social-link:hover {
+    color: rgb(73, 73, 198);
+}
+
+.contact__message {
+    position: absolute;
+    left: 0;
+    bottom: -2rem;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,22 @@
+
+.services__container{
+    row-gap: 2rem;
+}
+
+.services__icon{
+    display: block;
+    /* font-size: 2rem; */
+    margin-bottom: 1rem;
+}
+
+.services__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: .75rem;
+}
+main{
+    margin-left: 1rem;
+}
+.section__title{
+    text-align: center;
+    margin: 3rem 0rem;
+}
